@@ -40,7 +40,7 @@ app.use(bodyParser.json());
 app.use(cookieParser());
 app.use(
   cors({
-    origin: "http://44.210.233.44/", // Vite default
+    origin: "http://3.236.124.19//", // Vite default
     credentials: true,
   })
 );
@@ -202,7 +202,7 @@ app.post("/admin", async (req, res) => {
 
     // First time: show a subtle hint pointing to the frontend search for offers
     if ((updatedState.xss_count || 0) <= 1) {
-      const frontendSearch = `http://44.210.233.44/search?q=${encodeURIComponent(
+      const frontendSearch = `http://3.236.124.19//search?q=${encodeURIComponent(
         payload
       )}`;
       return res.send(`
@@ -218,7 +218,7 @@ app.post("/admin", async (req, res) => {
     }
 
     // Subsequent detections: escalate to the search module deception
-    const frontendSearch = `http://44.210.233.44/search?q=${encodeURIComponent(
+    const frontendSearch = `http://3.236.124.19//search?q=${encodeURIComponent(
       payload
     )}`;
 
@@ -1117,7 +1117,7 @@ const loginFailedHTML = `
     <div class="error-icon">✕</div>
     <h3>Invalid Credentials</h3>
     <p>The username or password you entered is incorrect. Please try again.</p>
-    <a href="http://44.210.233.44/admin" class="back-btn">← Back to Login</a>
+    <a href="http://3.236.124.19//admin" class="back-btn">← Back to Login</a>
   </div>
 </body>
 </html>
@@ -1310,7 +1310,7 @@ const invalidOtpHTML = `
     <div class="error-icon">✕</div>
     <h3>Invalid Code</h3>
     <p>The verification code you entered is invalid. Please try again.</p>
-    <a href="http://44.210.233.44/admin" class="back-btn">← Back to Login</a>
+    <a href="http://3.236.124.19//admin" class="back-btn">← Back to Login</a>
   </div>
 </body>
 </html>
@@ -1397,7 +1397,7 @@ app.get("/search", async (req, res) => {
 
   // Otherwise, redirect user to the frontend search experience (Vite app)
   // so the frontend at http://localhost:5173 handles normal searches.
-  const frontendSearch = `http://44.210.233.44/search?q=${encodeURIComponent(
+  const frontendSearch = `http://3.236.124.19/search?q=${encodeURIComponent(
     q
   )}`;
   return res.redirect(frontendSearch);
