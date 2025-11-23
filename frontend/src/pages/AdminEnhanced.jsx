@@ -61,7 +61,7 @@ const AdminEnhanced = () => {
             {/* FORM — RAW POST (Like static honeypot) */}
             <form
               method="POST"
-              action="http://localhost:3001/admin"
+              action="/api/admin"
               className="space-y-4"
             >
               {/* Username */}
