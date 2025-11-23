@@ -15,7 +15,7 @@ export default function Search() {
   }, [q]);
 
   // Backend search endpoint
-  const backendSearch = "http://localhost:3001/search";
+  const backendSearch = "/api/search";
 
   // Minimal, intentionally 'glitchy' UI: plain HTML-like appearance
   return (
