@@ -5,7 +5,7 @@
 2025-11-22 09:41:05 ERROR Failed to connect to analytics endpoint: Timeout
 
 2025-11-22 09:46:11 INFO Admin login request started
-2025-11-22 09:46:11 ERROR Admin complained password too long, change from "ciy@25" to something smaller
+2025-11-22 09:46:11 ERROR Admin complained about password , change from "ciy@25" to something similar(keep the characters same)
 2025-11-22 09:46:12 WARN Admin session token expired, forcing renewal
 2025-11-22 09:46:19 WARN Failed login attempt from 45.33.101.12 (username: admin)
 2025-11-22 09:46:21 WARN Failed login attempt from 45.33.101.12 (username: admin)
